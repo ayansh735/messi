@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <title>Lionel Messi</title>
+  </head>
+  <body>
+    <div class="toggle" onclick="toggle();">
+      <img src="images/toggle.png" />
+    </div>
+    <section class="banner">
+      <header>
+        <ul class="nav">
+          <li style="--i: 1"><a href="#">Home</a></li>
+          <li style="--i: 2" class="active"><a href="#">About</a></li>
+          <li style="--i: 3"><a href="#">Performance</a></li>
+          <li style="--i: 4"><a href="#">Team</a></li>
+          <li style="--i: 5"><a href="#">Rnaking</a></li>
+        </ul>
+      </header>
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="contentBx">
+          <h2>Lionel Messi</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            molestiae odio magni totam dolor, eum repellendus maiores facere
+            aliquam similique ipsum, quo magnam commodi natus minima qui? Nemo,
+            sunt iste voluptatibus debitis ex repellendus similique?
+          </p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="imgBx">
+          <img src="images/bg.png" />
+        </div>
+      </div>
+      <ul class="sci">
+        <li style="--i: 2"><a href="#">Facebook</a></li>
+        <li style="--i: 3"><a href="#">Twitter</a></li>
+        <li style="--i: 4"><a href="#">Instagram</a></li>
+      </ul>
+    </section>
+    <script>
+      const toggle = () => {
+        let banner = document.querySelector(".banner");
+        banner.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
